@@ -4,9 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title>Weather App</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <div class="container">
+      <h1>Pembroke Pines, FL.</h1>
+      <ul>
+        <li>Friday, September 11, 2020</li>
+        <li>Raining</li>
+      </ul>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
+            alt="raining
+          icon"
+          />
+          79° F|<a href="#">C</a>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: 93%</li>
+            <li>Wind: 11mph</li>
+          </ul>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
