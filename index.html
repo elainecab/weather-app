@@ -15,6 +15,26 @@
   <body>
     <div class="container">
       <div class="weather-app">
+        <form class="search-form">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="Search"
+                placeholder="Enter Location"
+                autofocus="on"
+                autocomplete="off"
+                class="form-control"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="Submit"
+                value="Search"
+                class="form-control btn btn-primary"
+              />
+            </div>
+          </div>
+        </form>
         <h1>Pembroke Pines, FL.</h1>
         <ul>
           <li>Friday, September 11, 2020</li>
@@ -27,7 +47,7 @@
               alt="raining
           icon"
             />
-            79° F|<a href="#">C</a>
+            <span class="current-temperature">79°</span> <span class="units">F|<a href="#">C</a></span>
           </div>
           <div class="col-6">
             <ul>
@@ -35,6 +55,52 @@
               <li>Humidity: 93%</li>
               <li>Wind: 11 mph</li>
             </ul>
+          </div>
+          <ul>
+          <div class="row">
+              <div class="col-2 forecast">
+                <li>
+                  Saturday
+                  <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png">
+                  <br>
+                  79°
+                </li>
+              </div>
+              <div class="col-2 forecast">
+                 <li>
+                   Sunday
+               <img src="https://ssl.gstatic.com/onebox/weather/48/thunderstorms.png">
+               <br>
+                  79°
+                  </li>
+                </div>
+
+                <div class="col-2 forecast">
+                  <li>
+                    Monday
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png">
+                    <br>
+                    89°
+                  </li>
+                </div>
+                <div class="col-2 forecast">
+                  <li>
+                   Tuesday
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png">
+                    <br>
+                    89°
+                  </li>
+                </div>
+                <div class="col-3 forecast">
+                  <li>
+                  Wednesday
+                    <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png">
+                    <br>
+                    77°
+                  </li>
+                </div>
+            </ul>
+            </div>
           </div>
         </div>
       </div>
