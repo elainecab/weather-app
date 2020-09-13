@@ -35,6 +35,10 @@ li {
   list-style: none;
 }
 
+footer {
+  text-align: center;
+}
+
 .weather-app {
   background-color: white;
   border: 4px solid hotpink;
