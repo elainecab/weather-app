@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+img {
+  width: 55px;
+}
+
 h1 {
   color: rgb(135, 135, 135);
   display: block;
