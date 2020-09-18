@@ -19,6 +19,7 @@ h1 {
   text-align: left;
   width: 618px;
   margin: 0;
+  padding-top: 20px;
 }
 
 ul {
@@ -37,6 +38,8 @@ li {
 
 footer {
   text-align: center;
+  position: relative;
+  top: 50px;
 }
 
 .weather-app {
