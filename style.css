@@ -40,6 +40,10 @@ footer {
   text-align: center;
 }
 
+strong {
+  font-size: 40px;
+}
+
 .link {
   color: purple;
 }
@@ -58,10 +62,6 @@ footer {
   margin: 20px auto;
   padding: 0;
   text-align: center;
-}
-
-.current-temperature {
-  font-size: 40px;
 }
 
 .units {
