@@ -44,6 +44,10 @@ strong {
   font-size: 40px;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 .link {
   color: purple;
 }
