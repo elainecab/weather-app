@@ -46,7 +46,7 @@ function displayTemperature(response) {
 }
 
 let apiKey = "a923e76b795634a6870a9f9aaf2bbb9a";
-let city = "Lisbon";
+let city = "Pembroke Pines";
 let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 
 axios.get(apiURL).then(displayTemperature);
