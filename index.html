@@ -13,111 +13,61 @@
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
-  <body>
-    <div class="container">
-      <div class="weather-app-wrapper">
+  
+<body>
+  <div class="container">
+    <div class="wrapper-app">
       <div class="weather-app">
-        <form id="search-form">
+        <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-9">
-              <input
-                type="Search"
-                placeholder="Enter Location"
-                autofocus="on"
-                autocomplete="off"
-                class="form-control"
-                id="city-input"
-                autocomplete="off"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="Submit"
-                value="Search"
-                class="form-control btn btn-primary"
-              />
-            </div>
-          </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li>as of: <span id ="date"></span>
-          </li>
-          <li id= "description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-            <img
-              src=""
-              id = "icon"
-              class ="float-left"/>
-            <strong id="temperature"></strong> <span class="units">°F|<a href="#">°C</a></span>
-          </div>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Humidity: <span id ="humidity"></span>%</li>
-              <li>Wind: <span id="speed"></span> mph</li>
-            </ul>
-          </div>
-          <ul>
-          <hr>
-          <div class="row">
-              <div class="col-2 forecast">
-                <li>
-                  Saturday
-                  <img src="https://www.flaticon.com/svg/static/icons/svg/1146/1146808.svg" alt="cloudy icon">
-                  <br>
-                  79°
-                </li>
+              <input type="search" placeholder="Enter a city" autocomplete="off"  class="form-control" id="city-input" />
               </div>
-              <div class="col-2 forecast">
-                 <li>
-                   Sunday
-               <img src="https://www.flaticon.com/svg/static/icons/svg/1146/1146808.svg" alt="cloudy icon" >
-               <br>
-                  79°
-                  </li>
-                </div>
-
-                <div class="col-2 forecast">
-                  <li>
-                    Monday
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/1146/1146853.svg" alt="thunder icon">
-                    <br>
-                    89°
-                  </li>
-                </div>
-                <div class="col-2 forecast">
-                  <li>
-                   Tuesday
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/1146/1146808.svg" alt="cloudy icon">
-                    <br>
-                    89°
-                  </li>
-                </div>
-                <div class="col-2 forecast">
-                  <li>
-                  Wednesday
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/3050/3050031.svg" alt="sunny icon">
-                    <br>
-                    77°
-                  </li>
-                </div>
-            </ul>
+              <div class="col-3">
+                <input type="submit" value="Search" class="btn btn-primary w-100" />
+              </div>
             </div>
+          </form>
+          <div class="col-4" id="current-info">
+            <div class="overview">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="description"></li>
+              </ul>
             </div>
           </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="" class="float-left" id="icon">
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="degrees">
+                    <a href="#" id="celsius-link" class="active">ºC</a> |
+                    <a href="#" id="fahrenheit-link">ºF</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Feels like: <span id="sensation"></span>%</li>
+                <li>Humidity <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
           </div>
-            <footer class="opensource-link">
-              <a class="link"
-              href="https://github.com/elainecab/weather-app" target="_blank"> Open-source code</a>
-              by Elaine Cabral
-          </footer>
-       </div>
-    </div>
-    <script src="script.js">
-    </script>
+          <div class="row" id="forecast-weather">
+            <div class="col-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <a href="https://github.com/elainecab/weather-app" target="blank">Open source code</a> by Elaine Cabral
+        </footer>
+      </div>
+    <script src="script.js"></script>
   </body>
-</html>
+  </html>
